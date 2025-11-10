@@ -1,0 +1,15 @@
+CREATE DATABASE movie_catalog;
+USE movie_catalog;
+
+CREATE TABLE movies (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(100),
+  director VARCHAR(100),
+  year INT,
+  genres VARCHAR(200)
+);
+insert into movies values(1,"Anniyan","shankar",1999,"disciplice"),(2,"2.o","shankar",2010,"robot"),(3,"KGF","Yash",2024,"gangster");
+update movies 
+set director = 'KS ravikumar'  where id = 2;
+select*from movies;
+
